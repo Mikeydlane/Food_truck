@@ -1,20 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Contact</title>
-</head>
-<body>
-	<h1>Get in Touch!</h1>
-	<h4>We accept feedback and criticism. If you have any questions or concerns, please feel free to contact us. We want to make your Banh Mi experience, an unforgettable one! Each filled out form gets directly emailed to us. Although we try to answer as quickly as possible, we ask that you give us up to 24 hours to respond to your email.</h4>
-	<table>
+
+<h1 class="contactHeading">Get in Touch with Us</h1>
+<h4 class="contactParagraph">We accept feedback and criticism. If you have any questions or concerns, please feel free to contact us. We want to make your Banh Mi experience, an unforgettable one! Each filled out form gets directly emailed to us. Although we try to answer as quickly as possible, we ask that you give us up to 24 hours to respond to your email.</h4>
+
+	<div class="sideBySide">
+		<div>
+			<a class="contactNavEmail" href="Daniel1995.db@gmail.com">
+			<h4>EMAIL</h4>
+			<p class="emailText">BanhMi@nyc.com</p>
+			<img class="emailIcon" src="/img/AtIcon.png">
+			</a>
+		</div>
+		<div>
+			<h4>PHONE</h4>
+			<p class="phoneNumber">(718) 555-1234</p>
+			<img class="phoneIcon" src="/img/phone.png">
+		</div>
+		<div><a class="contactNav" href="https://www.google.com/maps/place/Pearl+St+%26+Hanover+St,+New+York,+NY+10005/@40.7048136,-74.0117704,16z/data=!4m5!3m4!1s0x89c25a167a54432f:0xc8b77ff43b6a6bce!8m2!3d40.7048743!4d-74.0088569">
+			<h4>SNAIL MAIL</h4>
+			<p>Pearl St & Hanover St<br>New York, NY 10038</p>
+			<img class="addressIcon" src="/img/addressIcon.png">
+			</a>
+		</div>
+		<div class="contactMessage">
+			<h4>MESSAGE<br>US</h4>
+			<img class="messageIcon" src="/img/message.png">
+		</div>
+	</div>
+
+
+<!-- 	<table class="contactForm">
 		<form>
 			<tr>
 				<td><label>Name</label></td>
-				<td><input type="text" name="name" /></td>
+				<td><input type="text" name="name" width="10px"></td>
 			</tr>
 			<tr>
 				<td><label>Phone Number</label></td>
-				<td><input type="text" name="number"></td>
+				<td><input type="text" name="number"></td> 
 			</tr>
 			<tr>
 				<td><label>Email</label></td>
@@ -22,15 +44,74 @@
 			</tr>
 			<tr>
 				<td><label>Message</label></td>
-				<td><textarea rows="10" cols="40"></textarea></td>
-			</tr>
+				<td><textarea rows="10" cols="40"></textarea></td>  			</tr>
 			<tr>
-				<td><input type="submit" value="Send"></td>
+				<td></td>
+				<td><input type="submit" value="Send" class="sendButton"></td>
 			</tr>
 		</form>
-	</table>
+	</table> -->
 
-</body>
-</html>
+	<form id="form" class="container" method="POST" action="http://formspree.io/daniel1995.db@gmail.com">
+		
+		<div class="row">
+			<div class="six columns">
+				<label for="exampleEmailInput">Your name</label>
+				<input class="u-full-width" type="text" placeholder="Dave Smith" id="exampleEmailInput" name="Name">
+			</div>
+			<div class="six columns">
+				<label for="exampleEmailInput">Your number</label>
+				<input class="u-full-width" type="text" placeholder="(123) 555-5555" id="exampleEmailInput" name="Number">
+			</div>
+		</div>
+	    <div class="row">
+	    	<div class="six columns">
+	      		<label for="exampleEmailInput">Your email</label>
+	      		<input class="u-full-width" type="email" placeholder="example@mailbox.com" id="exampleEmailInput" name="Email">
+	    	</div>
+	    	<div class="six columns">
+	      		<label for="exampleRecipientInput">Reason for contacting</label>
+	      		<select class="u-full-width" id="exampleRecipientInput">
+	        	<option value="Option 1">Questions</option>
+	        	<option value="Option 2">Admiration</option>
+	        	<option value="Option 3">Concerns</option>
+	      		</select>
+	    	</div>
+	    </div>
+		  <label for="exampleMessage">Message</label>
+		  <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage" name="Message"></textarea>
+<!-- 		  <label class="example-send-yourself-copy">
+		    <input type="checkbox">
+		    <span class="label-body">Send a copy to yourself</span>
+		  </label> -->
+		  <input class="button-primary" type="submit" value="Submit">
+	</form>
+<script src="/js/main.js"></script>
+	<!-- <img src="/img/layersOfTaste.jpg"> -->
+
 
 <!-- We can add image icons of IG, facebook, email,  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
