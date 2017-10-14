@@ -77,9 +77,9 @@ body {
 }
 
 
-
-/*.logo-l {
-  margin-right: 120px;
+/*
+.logo-l {
+  padding-right: 120px;
 }*/
 
 /*icons*/
@@ -160,10 +160,43 @@ body {
   transform: matrix(0.99724, 0.07411, -0.07411, 0.99724, 0, 0);
 }
 
+.HoursAndLocation{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 375px;
+  font-family: "HurmeGeometricSans1-Regular", sans-serif;
+
+}
+
+.Location1{
+  text-decoration: none;
+  text-decoration-color: none;
+  color: black;
+  text-shadow: none;
+}
+.Location1 h4, .HoursOfOperation h4{
+  font-weight: bold;
+  font-size: 40px;
+}
+.Location1:visited{
+  color: black;
+}
+.HoursOfOperation{
+  /*font-size: 2em;*/
+  font-weight: bold;
+}
+.HoursOfOperation p{ 
+  margin-bottom: 0px;
+}
+.Location1 p, .HoursOfOperation p{
+  font-size: 20px;
+}
+
 .wrapper1{
   width: 900px;
   position: relative;
-  margin: 25% auto 3% auto;
+  margin: 0% auto 3% auto;
   text-align: center;
 }
 .battle{
@@ -419,7 +452,7 @@ body {
   width: 90%;
   box-sizing: border-box;
   text-align: center;
-  margin: 10px auto 100px auto ;
+  margin: 0px auto 100px auto ;
   padding-bottom: 200px;
   /*margin-bottom: 100px;*/
 
